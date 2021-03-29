@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "arg": "^5.0.0",
-    "eslint": "^7.23.0",
     "inquirer": "^8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0"
   },
   "keywords": [
     "cli",
