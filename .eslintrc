@@ -1,0 +1,22 @@
+{
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": ["error", 4],
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"],
+      "eqeqeq": ["warn", "smart"],
+      "no-var": "error",
+      "no-console": "warn"
+    },
+    "parserOptions": {
+      "ecmaVersion": 10,
+      "sourceType": "module"
+    },
+    "env": {
+      "commonjs": true,
+      "es6": true,
+      "node": true
+    },
+    "globals": {}
+  }
+  
