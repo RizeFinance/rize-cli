@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "eslint . --ext .js,.ts",
     "lint-fix": "eslint . --ext .js,.ts --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && mocha"
   },
   "dependencies": {
     "arg": "^5.0.0",
