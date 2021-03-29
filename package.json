@@ -7,15 +7,19 @@
     "rize": "bin/rize-cli"
   },
   "scripts": {
+    "lint": "eslint . --ext .js,.ts",
+    "lint-fix": "eslint . --ext .js,.ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "arg": "^5.0.0",
     "inquirer": "^8.0.0"
   },
+  "devDependencies": {
+    "eslint": "^7.23.0"
+  },
   "keywords": [
     "cli",
     "rize"
-  ],
-  "author": "Elephant Ventures LLC"
+  ]
 }
