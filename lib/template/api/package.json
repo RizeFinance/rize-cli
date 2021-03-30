@@ -1,0 +1,36 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/main.js",
+    "dev": "nodemon --watch src src/main.js",
+    "lint": "eslint src --ext .js,.json",
+    "lint-fix": "eslint src --ext .js,.json --fix",
+    "test-dev": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "connect": "^3.7.0",
+    "express": "~4.17.1",
+    "express-jwt": "^6.0.0",
+    "express-jwt-authz": "^2.4.1",
+    "express-validator": "^6.10.0",
+    "jest": "^26.6.3",
+    "jwks-rsa": "^2.0.2",
+    "jws": "^4.0.0",
+    "jwt-decode": "^3.1.2",
+    "knex": "^0.95.4",
+    "os": "^0.1.1",
+    "pg": "^8.5.1",
+    "query-string": "^7.0.0",
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-plugin-jest": "^24.3.2",
+    "nodemon": "2.0.7"
+  }
+}
