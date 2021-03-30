@@ -10,5 +10,4 @@ npm i -g @rizefinance/cli
 ```
 
 ### Options
-```
 - `--db`, `--database` - Select a database for your app.
