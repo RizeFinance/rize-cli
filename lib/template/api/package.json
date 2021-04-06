@@ -10,6 +10,7 @@
     "test-dev": "jest"
   },
   "dependencies": {
+    "@rizefinance/rize-js": "^0.0.1",
     "amazon-cognito-identity-js": "^4.6.0",
     "auth0": "^2.34.1",
     "axios": "^0.21.1",
