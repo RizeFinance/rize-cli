@@ -39,25 +39,25 @@ describe('cli', () => {
         });
 
         it('Confirms to create database and asks what platform', async () => {
-            questions.isCreateDB = async () => true;
+            questions.createDB = async () => true;
             questions.database = async () => 'MySQL';
             await RizeCli.start(['', '', 'create']);
-            expect(prompts).to.include('isCreateDB');
+            expect(prompts).to.include('createDB');
             expect(prompts).to.include('database');
         });
 
         it('Defaults to yes on confirmation', async () => {
-            questions.isCreateDB = async options => options.default;
+            questions.createDB = async options => options.default;
             questions.database = async () => 'MySQL';
             await RizeCli.start(['', '', 'create']);
-            expect(prompts).to.include('isCreateDB');
+            expect(prompts).to.include('createDB');
             expect(prompts).to.include('database');
         });
 
         it('Exits on no to confirmation', async () => {
-            questions.isCreateDB = async () => false;
+            questions.createDB = async () => false;
             await RizeCli.start(['', '', 'create']);
-            expect(prompts).to.include('isCreateDB');
+            expect(prompts).to.include('createDB');
             expect(prompts).to.not.include('database');
         });
     });
@@ -71,7 +71,7 @@ describe('cli', () => {
         it('Asks what database to use with no confirmation', async () => {
             questions.database = async () => 'MySQL';
             await RizeCli.start(['', '', 'create', '--database']);
-            expect(prompts).to.not.include('isCreateDB');
+            expect(prompts).to.not.include('createDB');
             expect(prompts).to.include('database');
         });
     });
