@@ -14,13 +14,15 @@ ARG GITHUB_EMAIL
 ENV HOME=/usr/src/data-migrations
 WORKDIR $HOME
 
+# Log in to the Rize SDK package's NPM registry (Github)
+RUN apk add expect
+COPY ./npm-login.sh $HOME
+RUN sh npm-login.sh
+
 # Pulls in the package.json file and installs all the node dependencies
 # The .dockerignore file should ignore the node module since the container will operate on a
 # linux server.
 COPY ./package.json $HOME
-
-RUN npm install -g npm-cli-login
-RUN npm-cli-login -u $GITHUB_USERNAME -p $GITHUB_PASSWORD -e $GITHUB_EMAIL -r https://npm.pkg.github.com -s @rizefinance
 RUN npm install --quiet
 
 # Copies the host machine folder(s) into the docker container so you can develop on your host
