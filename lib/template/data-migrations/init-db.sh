@@ -10,3 +10,6 @@ npm run db:migrate-list
 
 # Run db migrations
 npm run db:migrate
+
+# Run db seed
+npm run db:seed
