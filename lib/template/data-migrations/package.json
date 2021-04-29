@@ -1,0 +1,15 @@
+{
+    "name": "data-migrations",
+    "version": "1.0.0",
+    "description": "Data migrations",
+    "scripts": {
+        "db:migrate": "knex migrate:latest",
+        "db:rollback": "knex migrate:rollback",
+        "db:migrate-list": "knex migrate:list",
+        "db:seed": "knex seed:run"
+    },
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "knex": "^0.21.4"
+    }
+}
