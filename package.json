@@ -1,6 +1,6 @@
 {
   "name": "@rizefinance/cli",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A CLI to bootstrap Rize new projects",
   "main": "lib/cli.js",
   "bin": {
@@ -28,5 +28,11 @@
   "keywords": [
     "cli",
     "rize"
-  ]
+  ],
+  "repository": {
+    "url": "git://github.com/RizeFinance/rize-sdks.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
