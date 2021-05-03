@@ -30,7 +30,7 @@
     "rize"
   ],
   "repository": {
-    "url": "git://github.com/RizeFinance/rize-sdks.git"
+    "url": "git://github.com/RizeFinance/rize-cli.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
