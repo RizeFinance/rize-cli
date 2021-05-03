@@ -49,12 +49,12 @@ All of these will be run on Docker containers, which makes environments consiste
     - Set **API Authorization Settings** > **Default Directory** to `Username-Password-Authentication`
 
 ## Recommended AWS Cognito User Pool Configurations
-- App clients
+- **App clients**
     - Don't generate a client secret when creating an app client.
-- Assign a domain name
+- **Assign a domain name**
     - Under **App integration**, select **Domain name**. You can assign an Amazon Cognito domain, or use your own domain.
-- Attributes
+- **Attributes**
     - Require `email` under `Which standard attributes are required?
 `
-- Message customizations
+- **Message customizations**
     - Select `Link` for `Do you want to customize your email verification messages?`
