@@ -18,7 +18,7 @@ All of these will be run on Docker containers, which makes environments consiste
 
 ## Getting Started
 1. [Log in to GitHub Package Registry](#logging-in-to-the-github-package-registry)
-2. Install the `cli` package 
+2. Install the `@rizefinance/cli` package 
     ```sh
     npm i -g @rizefinance/cli
     ```
