@@ -1,0 +1,28 @@
+{
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": ["error", 4, { "SwitchCase": 1 }],
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"],
+      "eqeqeq": ["warn", "smart"],
+      "no-var": "error",
+      "no-console": "warn",
+      "jest/no-disabled-tests": "warn",
+      "jest/no-focused-tests": "error",
+      "jest/no-identical-title": "error",
+      "jest/prefer-to-have-length": "warn",
+      "jest/valid-expect": "error"
+    },
+    "parserOptions": {
+      "ecmaVersion": 10,
+      "sourceType": "module"
+    },
+    "env": {
+      "commonjs": true,
+      "es6": true,
+      "node": true,
+      "jest": true
+    },
+    "globals": {},
+    "plugins": ["jest"]
+  }
