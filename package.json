@@ -1,6 +1,6 @@
 {
   "name": "@rizefinance/cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A CLI to bootstrap Rize new projects",
   "main": "lib/cli.js",
   "bin": {
@@ -9,7 +9,8 @@
   "scripts": {
     "lint": "eslint . --ext .js,.ts",
     "lint-fix": "eslint . --ext .js,.ts --fix",
-    "test": "npm run lint && mocha"
+    "test": "npm run lint && mocha",
+    "local-create": "bin/rize-cli create"
   },
   "dependencies": {
     "arg": "^5.0.0",
