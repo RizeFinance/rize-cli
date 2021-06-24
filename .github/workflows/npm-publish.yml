@@ -6,7 +6,7 @@ on:
 
 jobs:
   publish-gpr:
-    if: ${{ github.event.release.draft == false && github.event.release.prerelease == false && github.event.release.target_commitish == 'master' }}
+    if: ${{ github.event.release.draft == false && github.event.release.prerelease == false }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
