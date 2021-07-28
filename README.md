@@ -1,4 +1,17 @@
-# Rize CLI
+<p align="center">
+  <a href="https://rizefs.com" target="_blank" align="center">
+    <img src="https://rizefs.com/wp-content/uploads/2021/01/rizelogo-grey.svg" width="200">
+  </a>
+  <br />
+</p>
+
+
+
+*Make financial services simple and accessible. Rize enables fintechs, financial institutions and brands to build across multiple account types with one API.* *If you want to join us [<kbd>**Check out our open positions**</kbd>](https://rizefs.com/careers/)_*
+
+
+
+# Official Rize CLI ![](https://img.shields.io/badge/CLI-NodeApp-blue)![](https://img.shields.io/badge/Version-1.0.0-green)
 
 A CLI to provision the necessary components to run a banking application using Rize, which includes:
 
@@ -71,4 +84,15 @@ All of these will be run on Docker containers, which makes environments consiste
   - Require `email` under `Which standard attributes are required?
     `
 - **Message customizations**
-  - Select `Link` for `Do you want to customize your email verification messages?`
+  - Select `Link`  for `Do you want to customize your email verification messages?`
+
+## Extra ENV's (Required)
+
+Once you run the CLI, you will need to add these extra lines to the `.env` file
+
+- **RIZE_DEFAULT_PRODUCT_UID**
+
+  - The application needs to know what is going to be the default Product when first signing up.
+    (Hint: Use the Rize SDK to get all products `const products = await rize.product.getList();` to find this UID)
+
+  

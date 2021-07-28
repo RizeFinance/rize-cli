@@ -1,6 +1,6 @@
 {
   "name": "@rizefinance/cli",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "A CLI to bootstrap Rize new projects",
   "main": "lib/cli.js",
   "bin": {
