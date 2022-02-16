@@ -59,6 +59,11 @@ All of these will be run on Docker containers, which makes environments consiste
 3. For the Password, input your [GitHub Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Your token should have the following scopes/permissions: `repo`, `read:packages`
 4. Input the email address that you're using in GitHub.
 
+To confirm you should see the following lines when you run npm config list
+
+```@rizefinance:registry = "https://npm.pkg.github.com"
+//npm.pkg.github.com/:_authToken = (protected)```
+
 ## CLI Options
 
 - `--db`, `--database` - Create a database for your app.
