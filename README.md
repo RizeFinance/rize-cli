@@ -61,8 +61,10 @@ All of these will be run on Docker containers, which makes environments consiste
 
 To confirm you should see the following lines when you run npm config list
 
-```@rizefinance:registry = "https://npm.pkg.github.com"
-//npm.pkg.github.com/:_authToken = (protected)```
+```
+@rizefinance:registry = "https://npm.pkg.github.com"
+//npm.pkg.github.com/:_authToken = (protected)
+```
 
 ## CLI Options
 
