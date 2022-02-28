@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "prototype-middleware-api",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,9 @@
     "test-dev": "jest"
   },
   "dependencies": {
-    "@rizefinance/rize-js": "^1.0.0",
+    "@rizefinance/rize-js": "^1.3.3",
+    "@sentry/node": "^6.14.1",
+    "@sentry/tracing": "^6.14.1",
     "amazon-cognito-identity-js": "^4.6.0",
     "auth0": "^2.34.1",
     "axios": "^0.21.1",
