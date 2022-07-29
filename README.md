@@ -7,6 +7,7 @@
 
 
 
+
 *Make financial services simple and accessible. Rize enables fintechs, financial institutions and brands to build across multiple account types with one API.* *If you want to join us [<kbd>**Check out our open positions**</kbd>](https://rizefs.com/careers/)_*
 
 
@@ -51,6 +52,7 @@ All of these will be run on Docker containers, which makes environments consiste
    cd my-project
    docker-compose up
    ```
+
 4. Check if Application is running at `http://localhost/api/health-check`
 
 ## Logging in to the GitHub Package Registry
@@ -93,14 +95,3 @@ To confirm you should see the following lines when you run npm config list
     `
 - **Message customizations**
   - Select `Link`  for `Do you want to customize your email verification messages?`
-
-## Extra ENV's (Required)
-
-Once you run the CLI, you will need to add these extra lines to the `.env` file
-
-- **RIZE_DEFAULT_PRODUCT_UID**
-
-  - The application needs to know what is going to be the default Product when first signing up.
-    (Hint: Use the Rize SDK to get all products `const products = await rize.product.getList();` to find this UID)
-
-  
