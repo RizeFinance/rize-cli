@@ -51,6 +51,7 @@ All of these will be run on Docker containers, which makes environments consiste
    cd my-project
    docker-compose up
    ```
+4. Check if Application is running at `http://localhost/api/health-check`
 
 ## Logging in to the GitHub Package Registry
 
