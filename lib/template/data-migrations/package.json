@@ -9,7 +9,7 @@
     "db:seed": "knex seed:run"
   },
   "dependencies": {
-    "@rizefinance/rize-js": "1.0.0",
+    "@rizefinance/rize-js": "^1.6.1",
     "dotenv": "^8.2.0",
     "knex": "^0.21.4",
     "pg": "^8.2.1"

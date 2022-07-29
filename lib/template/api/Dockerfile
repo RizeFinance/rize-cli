@@ -22,7 +22,6 @@ RUN sh ./npm-login.sh
 # The .dockerignore file should ignore the node module since the container will operate on a
 # linux server.
 RUN npm cache clean --force && npm install --force --save
-RUN npm install express --save
 
 EXPOSE 3000
 
