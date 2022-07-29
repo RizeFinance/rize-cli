@@ -71,6 +71,7 @@ To confirm you should see the following lines when you run npm config list
 
 ## CLI Options
 
+- `--help` - Get information on how to properly run the CLI.
 - `--db`, `--database` - Create a database for your app.
 - `--auth`, `--authentication` - Setup the authentication provider for your app.
 
