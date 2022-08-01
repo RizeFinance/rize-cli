@@ -2,7 +2,7 @@
 # The DockerFile Logins to NPM registry in GitHub to pull Rize SKD and install all the dependencies.
 
 # Set up base node image
-FROM node:10-alpine
+FROM node:14-alpine
 
 ARG GITHUB_USERNAME
 ARG GITHUB_PASSWORD
