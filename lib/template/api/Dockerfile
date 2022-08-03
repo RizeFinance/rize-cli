@@ -3,7 +3,7 @@
 # The container listens to port 3000 to serve the reques.
 
 # Set up base node image
-FROM node:10-alpine
+FROM node:14-alpine
 
 ARG GITHUB_USERNAME
 ARG GITHUB_PASSWORD
