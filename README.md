@@ -23,6 +23,8 @@ A CLI to provision the necessary components to run a banking application using R
 
 All of these will be run on Docker containers, which makes environments consistent and isolated from other apps regardless of where the app is deployed.
 
+**Have you watched the ["Build a Banking Application In Less Than 30 Minutes"](https://www.youtube.com/watch?v=m_uHTh8009c&t=1s) video?**
+
 ## Prerequisites
 
 - NodeJS v12 and up
